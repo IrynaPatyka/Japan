@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Міста</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+    <style>
+        .distances {
+            text-align: center;
+            margin-top: 0;
+            background-color: #6bc9c7; 
+            padding: 20px; 
+        }
+        .distances p {
+            font-size: 25px; 
+            margin-bottom: 10px; 
+        }
+       
+      
+        h1 {
+            color: #b22222;
+        }
+        input {
+            margin: 5px;
+        }
+        #result {
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #942800;
+        }
+        .japan-theme {
+            color: #b22222;
+        }
+  
+    </style>
+</head>
+<body>
+    <div class='header'>
+        <div class='container'>
+            <div class='header-line'>
+                <div class='header-logo'>
+                    <img src="logo.png" alt="Logo">
+                </div>
+                <div class='nav'>
+                    <a class='nav-item' href="index.html">ГОЛОВНА</a>
+                    <a class='nav-item' href="Міста.html">МІСТА</a>
+                    <a class='nav-item' href="Галерея.html">ГАЛЕРЕЯ</a>      
+                    <a class='nav-item' href="Тест.html">ТЕСТ</a>             
+                </div>
+                <div id='city' class='burger-slide disp'>
+                    <a class='nav-item block' href="index.html">ГОЛОВНА</a>
+                    <a class='nav-item block' href="Міста.html">МІСТА</a>
+                    <a class='nav-item block' href="Галерея.html">ГАЛЕРЕЯ</a>    
+                    <a class='nav-item block' href="Тест.html">ТЕСТ</a>             
+                </div> 
+            </div>
+        </div>
+    </div>
+    <div class='city'>
+        <div class='container'>
+            <div class='city-title'>
+                Великі міста Японії
+            </div>
+            <div class='city-items'>
+                <div class='city-item'>
+                    <div class='city-image'>
+                        <img src='city1.jpg' class='city-img' alt="Tokyo">
+                    </div>
+                    <div class='city-text'>
+                        Токіо
+                    </div>
+                    <div class='city-subtext'>
+                        Токіо — мегаполіс, що ніколи не спить. <br> Сяючі неонові вулиці, суцільна рухота<br> та смак вишуканої кухні роблять<br> його серцем Японії.
+                    </div>
+                    <div class='city-button'>
+                        <a href='https://uk.wikipedia.org/wiki/%D0%A2%D0%BE%D0%BA%D1%96%D0%BE' class='city-btn'>Вікіпедія</a>
+                    </div>
+                </div>
+                <div class='city-item'>
+                    <div class='city-image'>
+                        <img src='city2.jpg' class='city-img' alt="Osaka">
+                    </div>
+                    <div class='city-text'>
+                       Осака
+                    </div>
+                    <div class='city-subtext'>
+                        Осака — динамічне місто, де сучасність<br> зустрічається з традиціями. Безмежні торгові<br> вулиці, вишукана архітектура та гастрономічні<br> смаколики чекають на кожному кроці.
+                    </div>
+                    <div class='city-button'>
+                        <a href='https://uk.wikipedia.org/wiki/%D0%9E%D1%81%D0%B0%D0%BA%D0%B0' class='city-btn'>Вікіпедія</a>             
+                    </div>
+                </div>
+                <div class='city-item'>
+                    <div class='city-image'>
+                        <img src='city3.jpg' class='city-img' alt="Yokohama">
+                    </div>
+                    <div class='city-text'>
+                        Йокогама
+                    </div>
+                    <div class='city-subtext'>
+                        Йокогама — місто, що б'є рекорди. Знамените <br>портове місто Йокогама славиться своєю<br> величезною кількістю хмарочосів, шумними<br> вулицями та багатою морською культурою.
+                    </div>
+                    <div class='city-button'>
+                        <a href='https://uk.wikipedia.org/wiki/%D0%99%D0%BE%D0%BA%D0%BE%D0%B3%D0%B0%D0%BC%D0%B0' class='city-btn'>Вікіпедія</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h1 class="japan-theme">Розрахунок вартості поїздки до Японії</h1>
+    
+    <h2>Введіть параметри вашої поїздки</h2>
+    <form>
+        Введіть кількість днів: <input type="number" id="days" required> днів.<br><br>
+        Введіть кількість людей: <input type="number" id="people" required> осіб.<br><br>
+        <input type="button" value="Розрахувати" onclick="calculateTripCost()">
+    </form>
+    <div id="result">Тут буде відображено результат</div>
+    <script src="gpn.js"></script>
+    </div>
+    <div class='footer'>
+        © Ірина Патика 2024 <br>
+        Цей веб-сайт був створений в навчальних цілях.
+    </div>
+    <script src='app.js'></script>
+    <script src='gpn.js'></script> 
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class='header'>
+        <div class='container'>
+            <div class='header-line'>
+                <div class='header-logo'>
+                    <img src="logo.png" alt="Logo">
+                </div>
+                <div class='nav'>
+                    <a class='nav-item' href="index.html">ГОЛОВНА</a>
+                    <a class='nav-item' href="Міста.html">МІСТА</a>
+                    <a class='nav-item' href="Галерея.html">ГАЛЕРЕЯ</a>
+                    <a class='nav-item' href="Тест.html">ТЕСТ</a>  
+                </div>
+                <div id='gallery' class='burger-slide disp'>
+                    <a class='nav-item block' href="index.html">ГОЛОВНА</a>
+                    <a class='nav-item block' href="Міста.html">МІСТА</a>
+                    <a class='nav-item block' href="Галерея.html">ГАЛЕРЕЯ</a>    
+                    <a class='nav-item block' href="Тест.html">ТЕСТ</a>           
+                </div>   
+            </div>  
+        </div>
+    </div>
+    <div class='gallery'>
+        <div class='container'>          
+            <div class='gallery-title'>
+                <span>Галерея</span>
+            </div>          
+            <div class='gallery-content'>
+                <img src='1.jpg' alt="Image 1">
+                <img src='12.jpg' alt="Image 12">
+                <img src='3.jpg' alt="Image 3"><br>
+                <img src='4.jpg' alt="Image 4">
+                <img src='5.jpg' alt="Image 5">
+                <img src='6.jpg' alt="Image 6"><br>
+                <img src='7.jpg' alt="Image 7">
+                <img src='8.jpg' alt="Image 8">
+                <img src='9.jpg' alt="Image 9">
+                <img src='10.jpg' alt="Image 10"><br>
+                <img src='11.jpg' alt="Image 11">
+                <img src='2.jpg' alt="Image 2">
+            </div>           
+        </div>          
+    </div>
+    <script type="text/javascript">
+        var n1 = window.prompt("Введіть своє ім'я.","Наприклад - Іван");
+        var n2 = window.prompt("Введіть своє прізвище.","Наприклад - Іванов");
+        var n3 = window.prompt("Введіть своє по батькові.","Наприклад - Іванович");
+        
+        if (n1 == null || n2 == null || n3 == null) {
+            document.write("Дія була відмінена");
+        } else {
+            document.write("Привіт " + n2 + " " + n1 + " " + n3 + "! Радий тебе бачити!");
+        }
+    </script>
+    <div class='footer'>
+        © Ірина Патика 2024 <br>
+        Цей веб-сайт був створений в навчальних цілях.
+    </div>
+    <script src='app.js'></script>            
+</body>
+</html>
+

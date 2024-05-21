@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel='stylesheet' href='style.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap" rel="stylesheet">
+    <title>Японія</title>
+</head>
+<body class="page-with-photo">
+    <div class='header'>
+        <div class='container'>
+            <div class='header-line'>
+                <div class='header-logo'>
+                    <img src="logo.png" alt="Лого">
+                </div>
+                <div class='nav'>
+                    <a class='nav-item' href="index.html">ГОЛОВНА</a>
+                    <a class='nav-item' href="Міста.html">МІСТА</a>
+                    <a class='nav-item' href="Галерея.html">ГАЛЕРЕЯ</a>    
+                    <a class='nav-item' href="Тест.html">ТЕСТ</a>          
+                </div>
+                <div id='menu' class='burger-slide disp'>
+                    <a class='nav-item block' href="index.html">ГОЛОВНА</a>
+                    <a class='nav-item block' href="Міста.html">МІСТА</a>
+                    <a class='nav-item block' href="Галерея.html">ГАЛЕРЕЯ</a>     
+                    <a class='nav-item block' href="Тест.html">ТЕСТ</a>      
+                </div>
+            </div>
+        </div>
+        <div class='header-down'>
+            <div class='header-title'>
+                ЯПОНІЯ
+                <div class='header-subtitle'>
+                    країна традицій і сучасності
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class='cards'>
+    <div class='container'>
+       <div class='cards-holder'>
+            <div class='card'>
+                <div class='card-image'>
+                    <img class='cloud.png' src='cloud.png'>
+                </div>
+                <div class='card-title'>
+                    一期一会
+                </div>
+                <div class='card-desc'>
+                    Одна зустріч -<br> одне життя.
+                </div>
+            </div>
+            <div class='card'>
+
+                <div class='card-image'>
+                    <img class='cloud.png' src='cloud.png'>
+                </div>
+                <div class='card-title'>
+                    七転び八起き
+                </div>
+                <div class='card-desc'>
+                    Від семи разів падання - вісім підйомів.
+                </div>
+            </div>
+            <div class='card'>
+                <div class='card-image'>
+                    <img class='cloud.png' src='cloud.png'>
+                </div>
+                <div class='card-title'>
+                    初心忘るべからず
+                </div>
+                <div class='card-desc'>
+                    Не забудь про свій початковий дух.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class='information'>
+    <div class='container'>
+        <div class='information-holder'>
+            <div class='information-info'>
+                <div class='information-desc'>
+                    Японія - унікальне поєднання культури, історії та передових технологій, яке здивовує своєю різноманітністю та красою.
+                </div>             
+            </div>
+            <div class='information-images'>
+                <img class='Home2' src="Home 2.jpg" alt="">         
+        </div>
+        </div>
+    </div>
+</div>
+<div class='black-block'>
+    <div class='container'>
+        <div class='block-holder'>
+            <div class='left'>
+                <div class='left-title'>
+                    Натисніть на кнопку нижче,<br> щоб швидко перейти на сторінку<br> Вікіпедії та отримати докладну <br> інформацію про Японію.
+                </div>         
+            </div>
+            <div class='right'>
+                <div class='right-button'>
+                    <a href='https://uk.wikipedia.org/wiki/%D0%AF%D0%BF%D0%BE%D0%BD%D1%96%D1%8F' class='right-btn'>ВІКІПЕДІЯ</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="form-container">
+    <div class="form-text">
+        <p>Будь ласка, заповніть форму нижче для отримання додаткової інформації:</p>
+    </div>
+    <form action="page.html" method="GET" autocomplete="on">
+        <label for="name">Ім'я:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="phone">Номер телефону:</label>
+       
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Формат: 123-456-7890" required>
+        <label for="phone">Приклад номеру: 123-456-7890</label><br><br>
+        <label>Ми вам передзвонимо:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">9:00-11:30</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">13:00-17:00</label><br><br>
+        <label for="age">Вік:</label>
+        <input type="number" id="age" name="age" min="18" max="99" required><br><br>
+        <label for="terms">Я погоджуюсь з правилами:</label>
+        <input type="checkbox" id="terms" name="terms" required><br><br>
+        <input type="submit" value="Відправити">
+    </form>
+</div>
+</script>
+<div class='footer'>
+    © Ірина Патика 2024 <br>
+     Цей веб-сайт був створений в навчальних цілях.
+</div>
+<script src='app.js'></script>
+</body>
+</html>
